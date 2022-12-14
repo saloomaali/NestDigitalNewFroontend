@@ -1,0 +1,35 @@
+<app-admin-navbar>
+    
+</app-admin-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-4">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Employee Id</th>
+                                <th>Email_Id</th>
+                                <th>Designation</th>
+                                <th>Salary</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor = "let i of data">
+                                <td>{{i.name}} </td>
+                                <td>{{i.empId}} </td>
+                                <td>{{i.email_Id}} </td>
+                                <td>{{i.designation}} </td>
+                                <td>{{i.salary}} </td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
