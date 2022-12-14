@@ -1,0 +1,42 @@
+<app-admin-navbar></app-admin-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-4">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Employee Id</label>
+                    <input name="empId" [(ngModel)] = "empId" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                    <button (click) = "readValue()" class="btn btn-dark">SEARCH</button>
+                </div>
+            </div>
+            <div class="row g-3 mt-4" *ngFor = "let i of searchData">
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Name</label>
+                    <input type="text" class="form-control" value="{{i.name}} ">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Employee Id</label>
+                    <input type="text" class="form-control" value="{{i.empId}} ">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Email_Id</label>
+                    <input type="text" class="form-control" value="{{i.email_Id}} ">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Designation</label>
+                    <input type="text" class="form-control" value="{{i.designation}} ">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Salary</label>
+                    <input type="text" class="form-control" value="{{i.salary}} ">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                    <button (click) = "deleteBtn(i.id)" class="btn btn-danger">DELETE</button>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+</div>
