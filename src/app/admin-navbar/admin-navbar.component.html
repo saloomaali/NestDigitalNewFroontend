@@ -1,18 +1,53 @@
 <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" routerLink="#">NestDigital</a>
+      <a class="navbar-brand" routerLink="/">NestDigital</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" routerLink="/">Home</a>
-          <a class="nav-link" routerLink="/addEmployee">Add Employee</a>
-          <a class="nav-link" routerLink="/viewEmployee">View All Employee</a>
-          <a class="nav-link" routerLink="/searchEmployee">Search Employee</a>
-          <a class="nav-link" routerLink="/searchEmployee">Delete Employee</a>
+      
+          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" routerLink="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Employee
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" routerLink="/addEmployee">Add Employee</a></li>
+                  <li><a class="dropdown-item" routerLink="/viewEmployee">View All Employee</a></li>
+                  <li><a class="dropdown-item" routerLink="/searchEmployee">Search Employee</a></li>
+                  <li><a class="dropdown-item" routerLink="/deleteEmployee">Delete Employee</a></li>
+                  <li><a class="dropdown-item" routerLink="/editEmployee">Edit Employee</a></li>
+
+                  
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" routerLink="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Security
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" routerLink="/addSecurity">Add Security</a></li>
+                  <li><a class="dropdown-item" routerLink="/viewSecurity">View All Securities</a></li>    
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" routerLink="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Log
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" routerLink="/employeeLogin">Employee Log</a></li>
+                  <li><a class="dropdown-item" routerLink="/visitorsLogin">Visitors Log</a></li>
+                
+
+                  
+                </ul>
+              </li>
+            </ul>
+          </div>
+         
+        
           
-        </div>
-      </div>
+        
+      
     </div>
   </nav>
