@@ -12,10 +12,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { ViewEmployeeComponent } from './view-employee/view-employee.component';
 import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 import { SearchEmployeeComponent } from './search-employee/search-employee.component';
-import { DeleteEmployeeComponent } from './delete-employee/delete-employee.component'
+import { DeleteEmployeeComponent } from './delete-employee/delete-employee.component';
+import { HomeComponent } from './home/home.component'
 const myRoute:Routes = [
+
   {
     path:"",
+    component : HomeComponent
+  },
+  {
+    path:"admin",
     component:AdminComponent
   },
   {
@@ -41,7 +47,8 @@ const myRoute:Routes = [
     ViewEmployeeComponent,
     AdminNavbarComponent,
     SearchEmployeeComponent,
-    DeleteEmployeeComponent
+    DeleteEmployeeComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
