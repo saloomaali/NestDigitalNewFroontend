@@ -1,0 +1,35 @@
+
+<app-admin-navbar></app-admin-navbar>
+<div class="container">
+    <div class="row mt-4">
+        <div class="col co-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+            <h3>SECURITY REGISTRATION</h3>
+        </div>
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-4">
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Employee Id</label>
+                    <input name="emp_Code" [(ngModel)] = "emp_Code" type="text" class="form-control">
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Name</label>
+                    <input name="name" [(ngModel)] = "name"  type="text" class="form-control">
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Username</label>
+                    <input name="username" [(ngModel)] = "username"  type="text" class="form-control">
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Password</label>
+                    <input name="password" [(ngModel)] = "password"  type="password" class="form-control">
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                    <button (click) = "readValue()" class="btn btn-dark">ADD</button>
+                </div>
+            </div>
+        
+        </div>
+            
+    </div>
+</div>

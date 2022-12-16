@@ -13,7 +13,12 @@ import { ViewEmployeeComponent } from './view-employee/view-employee.component';
 import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 import { SearchEmployeeComponent } from './search-employee/search-employee.component';
 import { DeleteEmployeeComponent } from './delete-employee/delete-employee.component';
-import { HomeComponent } from './home/home.component'
+import { HomeComponent } from './home/home.component';
+import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
+import { AddSecurityComponent } from './add-security/add-security.component';
+import { ViewSecurityComponent } from './view-security/view-security.component';
+import { EmployeeLogComponent } from './employee-log/employee-log.component';
+import { VisitorsLogComponent } from './visitors-log/visitors-log.component'
 const myRoute:Routes = [
 
   {
@@ -35,6 +40,30 @@ const myRoute:Routes = [
   {
     path:"searchEmployee",
     component : SearchEmployeeComponent
+  },
+  {
+    path:"deleteEmployee",
+    component : DeleteEmployeeComponent
+  },
+  {
+    path:"editEmployee",
+    component : EditEmployeeComponent
+  },
+  {
+    path:"addSecurity",
+    component : AddSecurityComponent
+  },
+  {
+    path:"viewSecurity",
+    component : ViewSecurityComponent
+  },
+  {
+    path : "employeeLogin",
+    component : EmployeeLogComponent
+  },
+  {
+    path : "visitorsLogin",
+    component : VisitorsLogComponent
   }
 ]
 
@@ -48,7 +77,12 @@ const myRoute:Routes = [
     AdminNavbarComponent,
     SearchEmployeeComponent,
     DeleteEmployeeComponent,
-    HomeComponent
+    HomeComponent,
+    EditEmployeeComponent,
+    AddSecurityComponent,
+    ViewSecurityComponent,
+    EmployeeLogComponent,
+    VisitorsLogComponent
   ],
   imports: [
     BrowserModule,
