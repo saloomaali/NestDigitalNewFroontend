@@ -27,7 +27,7 @@ export class AddEmployeeComponent {
 
               
               if(response.status == "success"){
-                localStorage.setItem("EmployeeId", response.EmployeeId)
+                
                 console.log(localStorage.getItem("EmployeeId"))
                 alert("Employee added successfully")
                 window.location.reload()
