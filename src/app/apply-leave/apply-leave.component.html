@@ -1,0 +1,35 @@
+<app-employee-navbar></app-employee-navbar>
+<div class="container">
+    <div class="row mt-4">
+        <div class="col co-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+            <h3>APPLY FOR LEAVE</h3>
+        </div>
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-4">
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <select name="leaveType" [(ngModel)] = "leaveType" class="form-select" aria-label="Disabled select example">
+                        <option selected>Leave Type</option>
+                        <option value="Casual Leave">Casual Leave</option>
+                        <option value="Sick Leave">Sick Leave</option>
+                        <option value="Special Leave">Special Leave</option>
+                      </select>    
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Remarks</label>
+                    <textarea name="remarks" [(ngModel)] = "remarks" id="" cols="20" rows="5" class="form-control"></textarea>
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">From Date</label>
+                    <input name="fromDate" [(ngModel)] = "fromDate" type="date" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">To Date</label>
+                    <input name="toDate" [(ngModel)] = "toDate" type="date" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                    <button (click) = "readValue()" class="btn btn-dark">APPLY</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

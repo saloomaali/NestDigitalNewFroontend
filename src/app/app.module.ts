@@ -18,7 +18,12 @@ import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
 import { AddSecurityComponent } from './add-security/add-security.component';
 import { ViewSecurityComponent } from './view-security/view-security.component';
 import { EmployeeLogComponent } from './employee-log/employee-log.component';
-import { VisitorsLogComponent } from './visitors-log/visitors-log.component'
+import { VisitorsLogComponent } from './visitors-log/visitors-log.component';
+import { EmployeeLoginComponent } from './employee-login/employee-login.component';
+import { ViewEmployeeProfileComponent } from './view-employee-profile/view-employee-profile.component';
+import { EmployeeNavbarComponent } from './employee-navbar/employee-navbar.component';
+import { ApplyLeaveComponent } from './apply-leave/apply-leave.component';
+import { LeaveStatusComponent } from './leave-status/leave-status.component'
 const myRoute:Routes = [
 
   {
@@ -58,12 +63,28 @@ const myRoute:Routes = [
     component : ViewSecurityComponent
   },
   {
-    path : "employeeLogin",
+    path : "employeeLog",
     component : EmployeeLogComponent
   },
   {
     path : "visitorsLogin",
     component : VisitorsLogComponent
+  },
+  {
+    path : "employeeLogin",
+    component : EmployeeLoginComponent
+  },
+  {
+    path : "viewProfileEmployee",
+    component : ViewEmployeeProfileComponent
+  },
+  {
+    path: "applyLeave",
+    component : ApplyLeaveComponent
+  },
+  {
+    path:  "leaveStatus",
+    component : LeaveStatusComponent
   }
 ]
 
@@ -82,7 +103,12 @@ const myRoute:Routes = [
     AddSecurityComponent,
     ViewSecurityComponent,
     EmployeeLogComponent,
-    VisitorsLogComponent
+    VisitorsLogComponent,
+    EmployeeLoginComponent,
+    ViewEmployeeProfileComponent,
+    EmployeeNavbarComponent,
+    ApplyLeaveComponent,
+    LeaveStatusComponent
   ],
   imports: [
     BrowserModule,

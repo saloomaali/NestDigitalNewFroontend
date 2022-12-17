@@ -47,4 +47,17 @@ export class ApiService {
 
     return this.http.post("http://localhost:8080/viewLogDateVisitors",dataToSend)
   }
+  employeeLogin = (dataToSend:any)=>{
+    return this.http.post("http://localhost:8080/employeeLogin",dataToSend)
+
+  }
+  viewEmployeeProfile=(dataToSend:any)=>{
+    return this.http.post("http://localhost:8080/viewProfileEmp",dataToSend)
+  }
+  applyLeave=(dataToSend:any)=>{
+    return this.http.post("http://localhost:8080/applyLeave",dataToSend)
+  }
+  leaveStatus=(dataToSend:any)=>{
+    return this.http.post("http://localhost:8080/viewMyLeave",dataToSend)
+  }
 }
